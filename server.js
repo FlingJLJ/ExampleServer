@@ -7,6 +7,7 @@ http.createServer((request, response) =>
 {
     try
     {
+        response.writeHead(200)
         response.write(fs.readFileSync("index.html"))
         response.end()
     }
