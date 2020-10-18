@@ -3,8 +3,11 @@ var fs = require("fs")
 var http = require("http")
 var port = 80
 
+console.log("Visit \"localhost:80\" in your browser to connect to this server.")
+
 http.createServer((request, response) =>
 {
+    console.log("Good job, you visited the page being hosted on this server!")
     try
     {
         response.writeHead(200)
